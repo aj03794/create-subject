@@ -23,8 +23,8 @@ def create_subject():
         }
 
     
-    # next and error should both be functions
-    def subscribe(next, error = None):
+    # next should both be function
+    def subscribe(next):
         nonlocal subscriptionsNext
         subscriptionsNext.append(next) if next else None
         def unsubscribe():

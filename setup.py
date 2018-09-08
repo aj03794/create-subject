@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="create_subject",
-    version="0.0.1",
+    version="0.0.4",
     author="Adam Johnston",
     author_email="adamjohnston151@yahoo.com",
     description="Package to expose subject with next, filter, and subscribe methods - based on yurikoex's npm subject-with-filter package",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/aj03794/create-subject",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

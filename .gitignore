@@ -1,1 +1,5 @@
 */__pycache__
+.pypirc
+build/
+create_subject.egg-info/
+dist/

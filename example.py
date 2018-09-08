@@ -1,6 +1,6 @@
-from app import create_subject
+from create_subject import create_subject
 
-next, subscribe, filter = create_subject()
+next, subscribe, filter = create_subject.create_subject()
 
 def foo(msg):
     print('foo msg', msg)
@@ -15,7 +15,7 @@ foo_subscription = subscribe(foo)
 bar_subscription = subscribe(bar)
 print('----------------')
 print('foo_subscription', foo_subscription)
-next_msg('First hello')
+next('First hello')
 print ('foo_nsubscribing', foo_subscription['unsubscribe']())
 
 filtered = filter(lambda msg: True)
